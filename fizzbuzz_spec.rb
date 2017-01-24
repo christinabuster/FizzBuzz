@@ -9,5 +9,8 @@ describe "fizzbuzz" do
     it '5' do
       expect(buzz(5)).to be_truthy
     end
+    it '15' do
+      expect(fizzbuzz(15)).to be_truthy
+    end
   end
 end
