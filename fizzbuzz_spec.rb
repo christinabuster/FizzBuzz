@@ -5,7 +5,7 @@ describe "fizzbuzz" do
   context 'if a number is divisible by' do
 
     it "print 'fizzbuzz' when a number is divisible by 3 and 5" do
-      
+
       expect(fizz_buzz(15)).to eq "FizzBuzz"
     end
 
@@ -25,7 +25,7 @@ end
 
 def fizz_buzz
   1.upto(N) do |i|
-  if i % 3 == 0 && number % 5 == 0
+  if i % 3 == 0 && i % 5 == 0
     puts "FizzBuzz"
     elsif i % 3 == 0
       puts "Fizz"
