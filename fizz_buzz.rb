@@ -1,6 +1,6 @@
 def fizz_buzz(i)
   # instance variable = print numbers upto(limit) an infinite number (N)
-    1.upto(N) do |i|
+    1.upto(100) do |i|
     # if the i(integer) is evening divisible by both 3 and 5 print FizzBuzz. This if statement must run first before the other conditions to print fizzbuzz.
     if i % 3 == 0 && i % 5 == 0
       puts "FizzBuzz"
