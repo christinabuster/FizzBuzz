@@ -1,3 +1,10 @@
+def fizz_buzz(i)
+    return "FizzBuzz" if fizzbuzz(i)
+    return "Fizz" if fizz(i)
+    return "Buzz" if buzz(i)
+    i
+end
+
 def fizz(i)
   i % 3 == 0
 end
@@ -7,5 +14,5 @@ def buzz(i)
 end
 
 def fizzbuzz(i)
-  i % 15 == 0
+  i % 3 == 0 && i % 5 == 0
 end
