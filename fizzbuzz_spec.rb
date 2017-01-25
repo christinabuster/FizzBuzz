@@ -2,7 +2,7 @@ require 'rspec'
 require_relative 'fizz_buzz'
 
 describe "fizzbuzz" do
-  context 'if a number is divisible by 3 or 5 the value is true' do
+  context 'if an integer is divisible by 3 or 5 the value is true' do
     it 'should be divisible by 3' do
       expect(fizz(3)).to be_truthy
     end
@@ -14,7 +14,7 @@ describe "fizzbuzz" do
     end
   end
 
-  context 'if a number is not divisible by 3 or 5 the value is false' do
+  context 'if an integer is not divisible by 3 or 5 the value is false' do
     it 'should not be divisible by 3 and should be false' do
       expect(fizz(1)).to be_falsey
     end
@@ -27,19 +27,19 @@ describe "fizzbuzz" do
   end
 
   context 'when implimenting fizzbuzz' do
-    it 'should print numbers that are not divisible by 3 or 5' do
+    it 'should print integers that are not divisible by 3 or 5' do
       expect(fizz_buzz(1)).to eq 1
     end
-    it 'should print fizz for the number 3' do
+    it 'should print fizz for the integer 3' do
       expect(fizz_buzz(3)).to eq "Fizz"
     end
-    it 'should print buzz for the number 5' do
+    it 'should print buzz for the integer 5' do
       expect(fizz_buzz(5)).to eq "Buzz"
     end
-    it 'should print FizzBuzz for the number 15' do
+    it 'should print FizzBuzz for the integer 15' do
       expect(fizz_buzz(15)).to eq "FizzBuzz"
     end
-    it 'should print FizzBuzz for the number 30' do
+    it 'should print FizzBuzz for the integer 30' do
       expect(fizz_buzz(30)).to eq "FizzBuzz"
     end
   end
