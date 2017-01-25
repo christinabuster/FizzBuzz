@@ -39,5 +39,8 @@ describe "fizzbuzz" do
     it 'should print FizzBuzz for the number 15' do
       expect(fizz_buzz(15)).to eq "FizzBuzz"
     end
+    it 'should print FizzBuzz for the number 30' do
+      expect(fizz_buzz(30)).to eq "FizzBuzz"
+    end
   end
 end
