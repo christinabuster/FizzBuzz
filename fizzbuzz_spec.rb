@@ -2,36 +2,21 @@ require 'rspec'
 require_relative 'fizzbuzz'
 
 describe "fizzbuzz" do
-  context 'if a number is divisible by' do
-    it '3' do
-      expect(is_divisible_by_three?(3)).to be_truthy
+  context 'when implimenting fizzbuzz' do
+    it 'prints numbers that are not devisible by 3 or 5' do
+      expect(fizz_buzz(1)).to eq 1
     end
-    it '5' do
-      expect(is_divisible_by_five?(5)).to be_truthy
+    it 'prints fizz for the number 3' do
+      expect(fizz_buzz(3)).to eq "Fizz"
     end
-    it '15' do
-      expect(is_divisible_by_fifteen?(15)).to be_truthy
+    it 'prints buzz for the number 3' do
+      expect(fizz_buzz(5)).to eq "Buzz"
     end
-  end
-
-  context 'if a number is not divisible by' do
-    it '3' do
-      expect(is_divisible_by_three?(1)).to be_falsey
+    it 'prints FizzBuzz for the number 15' do
+      expect(fizz_buzz(15)).to eq "FizzBuzz"
     end
-    it '5' do
-      expect(is_divisible_by_five?(1)).to be_falsey
-    end
-    it '15' do
-      expect(is_divisible_by_fifteen?(1)).to be_falsey
-    end
-  end
-
-  context 'returns fizzbuzz'
-    it 'the number' do
-      expect(fizzbuzz(1)).to eq 1
-    end
-    it 'fizz' do
-      expect(fizzbuzz(3)).to eq "Fizz"
+    it 'prints FizzBuzz for the number 30' do
+      expect(fizz_buzz(30)).to eq "FizzBuzz"
     end
   end
 end
