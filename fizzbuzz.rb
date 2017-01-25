@@ -2,7 +2,7 @@ def fizz_buzz(i)
     return "FizzBuzz" if fizzbuzz(i)
     return "Fizz" if fizz(i)
     return "Buzz" if buzz(i)
-    i
+    else i
 end
 
 def fizz(i)
