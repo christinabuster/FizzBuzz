@@ -2,19 +2,19 @@ require 'rspec'
 require_relative 'fizz_buzz'
 
 describe "fizzbuzz" do
-  context 'if a number is divisible by' do
-    it '3' do
+  context 'if a number is divisible by 3 or 5 the value is true' do
+    it 'should be divisible by 3' do
       expect(fizz(3)).to be_truthy
     end
-    it '5' do
+    it 'should be divisible by 5' do
       expect(buzz(5)).to be_truthy
     end
-    it '15' do
+    it 'should be divisible by 3 and 5' do
       expect(fizzbuzz(15)).to be_truthy
     end
   end
 
-  context 'if a number is not divisible by' do
+  context 'if a number is not divisible by 3 or 5 the value is false' do
     it 'should not be divisible by 3 and should be false' do
       expect(fizz(1)).to be_falsey
     end
