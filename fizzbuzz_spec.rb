@@ -1,5 +1,5 @@
 require 'rspec'
-require_relative 'fizzbuzz'
+require_relative 'fizz_buzz'
 
 describe "fizzbuzz" do
   context 'when implimenting fizzbuzz' do
