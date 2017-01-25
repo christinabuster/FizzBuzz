@@ -23,18 +23,18 @@ require_relative 'fizz_buzz'
 
 describe "fizzbuzz" do
   context 'if a the object is neither false or nil' do
-    it '3' do
+    it 'should not be false or nil for integer 3' do
       expect(fizz_buzz(3)).to be_truthy
     end
-    it '5' do
+    it 'should not be false or nil for integer 5' do
       expect(fizz_buzz(5)).to be_truthy
     end
-    it '15' do
+    it 'should not be false or nil for integer 15' do
       expect(fizz_buzz(15)).to be_truthy
     end
   end
   context 'if a number is not divisible by' do
-    it 'should not be divisible by 3 and should be false' do
+    it 'should print the integer 1' do
       expect(fizz_buzz(1)).to eq 1
     end
   end
