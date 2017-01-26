@@ -3,16 +3,16 @@ require_relative 'fizz_buzz'
 
 # describe "fizzbuzz" do
 #   context 'when implimenting fizzbuzz' do
-#     it 'prints numbers that are not devisible by 3 or 5' do
+#     it 'prints integers that are not devisible by 3 or 5' do
 #       expect(fizz_buzz(1)).to eq 1
 #     end
-#     it 'prints fizz for the number 3' do
+#     it 'prints fizz for the integer 3' do
 #       expect(fizz_buzz(3)).to eq "Fizz"
 #     end
-#     it 'prints buzz for the number 3' do
+#     it 'prints buzz for the integer 5' do
 #       expect(fizz_buzz(5)).to eq "Buzz"
 #     end
-#     it 'prints FizzBuzz for the number 15' do
+#     it 'prints FizzBuzz for the integer 15' do
 #       expect(fizz_buzz(15)).to eq "FizzBuzz"
 #     end
 #     it 'prints FizzBuzz for the number 30' do
@@ -38,6 +38,12 @@ describe "fizzbuzz" do
   context 'if a number is not divisible by 3 or 5' do
     it 'should print the integer 1' do
       expect(fizz_buzz(1)).to eq 1
+    end
+  end
+
+  context 'if a number is not divisible by 3 or 5' do
+    it 'should print the integer 1' do
+      expect(fizz_buzz([1, 2, 3])).to all (include ("Fizz"))
     end
   end
 
